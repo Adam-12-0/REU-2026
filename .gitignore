@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data and model artifacts
+data/
+datasets/
+models/
+checkpoints/
+outputs/
+results/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# OS files
+.DS_Store
