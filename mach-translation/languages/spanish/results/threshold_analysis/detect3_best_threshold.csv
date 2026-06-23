@@ -1,0 +1,2 @@
+threshold,precision,recall,f1,true_positives,false_positives,false_negatives,true_negatives,predicted_count,gold_count,candidate_count
+93.000000,0.497013,0.842333,0.625157,7987.000000,8083.000000,1495.000000,7343.000000,16070.000000,9482.000000,24908.000000
