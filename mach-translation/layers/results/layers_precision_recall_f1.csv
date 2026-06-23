@@ -1,0 +1,2 @@
+﻿comparison,precision,recall,f1,predicted_count,gold_count,candidate_count
+layered_translation_vs_gold_terms,0.438,0.931,0.595,20163,9482,24908
