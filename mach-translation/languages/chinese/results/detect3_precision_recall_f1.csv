@@ -1,0 +1,2 @@
+comparison,precision,recall,f1,predicted_count,gold_count,candidate_count
+sentence_round_trip_flagged_words_vs_gold_terms,0.498,0.883,0.637,16808,9482,24908
