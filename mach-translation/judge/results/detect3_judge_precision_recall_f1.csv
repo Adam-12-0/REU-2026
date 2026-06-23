@@ -1,0 +1,2 @@
+﻿comparison,precision,recall,f1,predicted_count,gold_count,candidate_count
+four_language_judge_vs_gold_terms,0.49,0.95,0.65,18239,9482,24908
