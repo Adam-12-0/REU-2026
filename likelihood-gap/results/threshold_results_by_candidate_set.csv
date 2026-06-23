@@ -1,0 +1,299 @@
+candidate set,score category,score column,gold column,gold comparison,threshold,precision,recall,f1,predicted count,gold count,candidate count
+all candidates,surprise,candidate surprise,is_gold,all gold terms,0.192,0.102,1.000,0.184,69583,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,4.822,0.106,1.000,0.192,66722,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,8.136,0.111,1.000,0.199,63859,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,9.736,0.116,1.000,0.208,60969,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,12.114,0.122,1.000,0.217,57996,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,13.855,0.128,1.000,0.228,55073,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,15.538,0.109,0.808,0.193,52254,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,18.041,0.104,0.727,0.182,49278,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,19.444,0.108,0.709,0.187,46391,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,21.509,0.102,0.631,0.176,43549,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,23.166,0.077,0.444,0.132,40629,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,24.613,0.055,0.292,0.092,37731,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,26.564,0.047,0.230,0.078,34808,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,28.071,0.047,0.213,0.077,31905,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,30.115,0.050,0.204,0.080,29067,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,32.492,0.046,0.169,0.072,26083,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,34.855,0.043,0.142,0.066,23177,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,37.007,0.049,0.142,0.073,20289,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,40.875,0.054,0.134,0.077,17409,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,43.772,0.044,0.090,0.059,14459,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,45.994,0.055,0.090,0.068,11619,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,50.116,0.066,0.081,0.072,8748,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,57.722,0.063,0.052,0.057,5870,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,65.460,0.025,0.010,0.015,2923,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,85.326,0.000,0.000,0.000,70,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,0.192,0.102,1.000,0.184,69583,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,4.314,0.106,1.000,0.192,66718,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,6.049,0.111,1.000,0.199,63886,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,6.678,0.116,1.000,0.208,60942,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,7.139,0.122,1.000,0.217,57960,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,7.632,0.119,0.931,0.212,55168,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,8.000,0.118,0.871,0.208,52255,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,8.286,0.122,0.852,0.214,49323,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,8.555,0.127,0.834,0.220,46463,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,8.714,0.131,0.808,0.226,43546,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,8.893,0.136,0.780,0.231,40618,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,9.057,0.146,0.780,0.247,37654,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,9.217,0.158,0.780,0.263,34806,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,9.418,0.169,0.763,0.277,31909,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,9.610,0.174,0.715,0.280,29034,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,9.785,0.191,0.706,0.301,26060,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,10.023,0.204,0.671,0.313,23217,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,10.302,0.219,0.630,0.325,20319,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,10.560,0.232,0.571,0.330,17395,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,10.845,0.244,0.500,0.328,14531,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,11.200,0.232,0.379,0.288,11570,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,11.609,0.246,0.302,0.271,8682,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,12.032,0.292,0.238,0.263,5761,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,12.744,0.397,0.160,0.228,2838,7071,69632
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,16.739,0.000,0.000,0.000,0,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,0.000,0.102,1.000,0.184,69632,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,2.560,0.106,1.000,0.192,66769,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,5.217,0.111,1.000,0.199,63869,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,7.278,0.116,1.000,0.208,60939,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,8.788,0.122,1.000,0.217,57977,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,10.256,0.128,1.000,0.227,55143,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,11.653,0.125,0.924,0.220,52219,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,12.896,0.124,0.868,0.218,49378,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,14.107,0.114,0.747,0.197,46418,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,15.529,0.106,0.650,0.182,43538,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,16.705,0.091,0.522,0.155,40633,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,17.601,0.088,0.469,0.148,37728,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,19.015,0.075,0.371,0.125,34759,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,20.151,0.065,0.292,0.106,31883,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,21.622,0.056,0.231,0.091,29012,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,23.168,0.050,0.186,0.079,26169,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,24.438,0.054,0.177,0.083,23261,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,25.982,0.050,0.142,0.073,20252,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,27.778,0.057,0.142,0.082,17477,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,30.271,0.065,0.134,0.087,14517,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,32.737,0.060,0.099,0.075,11603,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,37.116,0.057,0.071,0.063,8701,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,42.077,0.052,0.043,0.047,5773,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,46.851,0.000,0.000,0.000,2864,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,63.121,0.000,0.000,0.000,0,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,0.000,0.102,1.000,0.184,69632,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,2.020,0.106,1.000,0.192,66749,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,3.722,0.111,1.000,0.199,63871,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,4.262,0.116,1.000,0.208,60931,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,4.640,0.122,1.000,0.217,58086,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,5.027,0.127,0.991,0.225,55104,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,5.254,0.128,0.943,0.225,52271,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,5.448,0.131,0.911,0.229,49299,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,5.654,0.131,0.860,0.227,46387,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,5.827,0.137,0.844,0.236,43488,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,6.040,0.145,0.835,0.248,40567,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,6.216,0.147,0.786,0.248,37762,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,6.450,0.150,0.740,0.250,34845,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,6.668,0.160,0.723,0.262,31928,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,6.956,0.174,0.714,0.280,29027,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,7.234,0.182,0.671,0.286,26061,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,7.507,0.202,0.663,0.310,23228,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,7.798,0.212,0.610,0.315,20295,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,8.089,0.223,0.550,0.317,17452,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,8.449,0.219,0.449,0.295,14501,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,8.801,0.248,0.407,0.308,11609,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,9.331,0.279,0.345,0.309,8745,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,9.915,0.302,0.245,0.271,5749,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,11.322,0.388,0.160,0.226,2909,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,16.070,0.000,0.000,0.000,0,7071,69632
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,0.192,0.221,1.000,0.362,24859,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,1.799,0.231,1.000,0.375,23861,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,4.390,0.241,1.000,0.388,22874,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,5.601,0.252,1.000,0.403,21808,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,6.417,0.265,1.000,0.419,20744,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,8.136,0.279,1.000,0.436,19750,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,8.717,0.296,1.000,0.456,18611,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,9.568,0.313,1.000,0.476,17598,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,10.455,0.332,1.000,0.498,16582,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,10.975,0.353,1.000,0.522,15587,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,11.960,0.380,1.000,0.551,14486,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,12.626,0.409,1.000,0.580,13462,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,13.210,0.442,1.000,0.613,12458,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,14.274,0.471,0.978,0.636,11425,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,15.001,0.455,0.862,0.595,10429,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,15.698,0.431,0.729,0.542,9322,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,17.560,0.433,0.649,0.519,8241,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,19.025,0.475,0.626,0.540,7255,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,20.510,0.531,0.593,0.560,6149,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,21.770,0.515,0.482,0.498,5152,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,22.459,0.490,0.373,0.423,4191,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,23.243,0.409,0.230,0.294,3093,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,24.001,0.361,0.138,0.200,2105,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,25.261,0.122,0.023,0.038,1027,5503,24908
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,34.568,0.000,0.000,0.000,0,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,0.192,0.221,1.000,0.362,24859,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,1.799,0.231,1.000,0.375,23861,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,4.201,0.241,1.000,0.388,22863,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,4.961,0.252,1.000,0.403,21812,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,5.984,0.265,1.000,0.419,20762,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,6.497,0.279,1.000,0.436,19729,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,7.081,0.295,1.000,0.456,18654,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,7.634,0.285,0.911,0.434,17596,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,8.174,0.271,0.820,0.408,16636,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,8.483,0.279,0.786,0.412,15512,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,8.811,0.281,0.740,0.407,14492,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,9.282,0.301,0.740,0.428,13505,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,9.568,0.318,0.717,0.441,12402,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,9.862,0.346,0.717,0.467,11397,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,10.310,0.361,0.684,0.473,10430,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,10.578,0.378,0.640,0.475,9319,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,10.892,0.371,0.559,0.446,8278,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,11.230,0.355,0.466,0.403,7229,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,11.609,0.336,0.376,0.355,6159,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,11.867,0.347,0.329,0.337,5217,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,12.200,0.372,0.283,0.321,4176,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,12.602,0.388,0.217,0.278,3077,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,13.210,0.502,0.192,0.278,2107,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,14.829,0.591,0.107,0.181,997,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,16.739,0.000,0.000,0.000,0,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,0.000,0.221,1.000,0.362,24908,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,2.020,0.241,1.000,0.388,22881,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,3.539,0.252,1.000,0.403,21814,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,4.568,0.265,1.000,0.419,20762,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,5.474,0.279,1.000,0.437,19697,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,6.144,0.295,1.000,0.456,18646,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,7.082,0.312,1.000,0.476,17642,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,7.856,0.332,1.000,0.498,16599,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,8.532,0.354,1.000,0.523,15525,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,9.287,0.377,1.000,0.548,14580,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,9.889,0.409,1.000,0.580,13468,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,10.740,0.435,0.987,0.604,12478,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,11.398,0.446,0.923,0.601,11394,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,12.182,0.467,0.878,0.609,10344,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,12.765,0.490,0.831,0.617,9328,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,13.566,0.493,0.740,0.592,8263,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,14.192,0.509,0.675,0.580,7293,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,15.279,0.511,0.575,0.541,6186,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,16.122,0.512,0.486,0.499,5228,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,16.872,0.482,0.360,0.412,4113,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,17.660,0.570,0.317,0.408,3059,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,18.912,0.598,0.225,0.327,2073,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,20.080,0.609,0.113,0.191,1023,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,27.071,0.000,0.000,0.000,69,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,0.000,0.221,1.000,0.362,24908,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,2.011,0.241,1.000,0.389,22825,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,3.056,0.253,1.000,0.404,21763,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,3.739,0.265,1.000,0.419,20761,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,4.339,0.279,1.000,0.436,19715,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,4.995,0.291,0.988,0.450,18684,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,5.319,0.287,0.917,0.437,17602,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,5.563,0.279,0.844,0.420,16628,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,5.828,0.283,0.799,0.418,15527,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,6.217,0.288,0.761,0.418,14543,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,6.627,0.298,0.728,0.423,13455,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,7.042,0.318,0.717,0.440,12419,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,7.411,0.339,0.703,0.457,11403,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,7.947,0.348,0.657,0.455,10385,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,8.212,0.349,0.589,0.438,9302,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,8.546,0.355,0.532,0.425,8249,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,8.920,0.365,0.478,0.414,7214,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,9.351,0.385,0.432,0.407,6171,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,9.608,0.356,0.336,0.346,5197,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,10.134,0.375,0.284,0.323,4164,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,10.821,0.374,0.216,0.274,3176,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,11.997,0.496,0.192,0.277,2132,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,13.326,0.677,0.137,0.228,1113,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,16.070,0.000,0.000,0.000,0,5503,24908
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,3.082,0.035,1.000,0.068,44724,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,15.263,0.037,1.000,0.071,42836,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,18.350,0.038,1.000,0.074,40971,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,19.945,0.040,1.000,0.077,39111,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,23.011,0.042,1.000,0.081,37229,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,25.393,0.044,1.000,0.085,35337,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,27.111,0.047,1.000,0.089,33516,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,28.043,0.047,0.960,0.090,31717,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,29.633,0.048,0.921,0.092,29787,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,30.925,0.047,0.841,0.089,27941,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,32.447,0.046,0.763,0.087,26077,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,34.218,0.044,0.677,0.082,24263,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,35.434,0.045,0.640,0.084,22392,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,36.794,0.049,0.640,0.091,20537,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,39.710,0.051,0.602,0.094,18592,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,41.986,0.046,0.491,0.084,16739,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,43.646,0.047,0.449,0.085,14955,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,44.749,0.049,0.406,0.087,13105,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,46.676,0.057,0.406,0.100,11122,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,49.210,0.061,0.365,0.105,9350,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,54.238,0.068,0.325,0.113,7458,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,58.113,0.055,0.193,0.085,5524,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,62.415,0.020,0.047,0.028,3701,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,69.652,0.000,0.000,0.000,1897,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,85.326,0.000,0.000,0.000,70,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,1.541,0.035,1.000,0.068,44724,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,6.177,0.037,1.000,0.071,42885,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,6.794,0.038,1.000,0.074,40962,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,7.253,0.040,1.000,0.077,39079,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,7.670,0.042,1.000,0.081,37339,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,7.990,0.044,1.000,0.085,35423,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,8.204,0.047,1.000,0.089,33527,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,8.464,0.050,1.000,0.094,31660,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,8.629,0.053,1.000,0.100,29764,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,8.794,0.052,0.922,0.098,27908,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,8.896,0.055,0.922,0.105,26098,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,9.039,0.060,0.922,0.112,24195,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,9.120,0.065,0.922,0.121,22410,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,9.251,0.068,0.883,0.125,20494,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,9.442,0.074,0.883,0.137,18656,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,9.623,0.066,0.709,0.121,16813,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,9.752,0.070,0.666,0.127,14859,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,9.955,0.076,0.627,0.135,12995,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,10.113,0.077,0.554,0.136,11229,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,10.402,0.062,0.371,0.107,9360,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,10.640,0.052,0.249,0.086,7517,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,10.899,0.034,0.122,0.053,5639,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,11.358,0.017,0.041,0.024,3747,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,11.800,0.035,0.041,0.038,1822,1568,44724
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,14.226,0.000,0.000,0.000,55,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,0.000,0.035,1.000,0.068,44724,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,9.320,0.037,1.000,0.071,42871,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,11.899,0.038,1.000,0.074,41043,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,13.865,0.040,1.000,0.077,39112,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,15.831,0.042,1.000,0.081,37309,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,17.149,0.044,1.000,0.085,35353,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,18.665,0.045,0.960,0.086,33555,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,19.902,0.048,0.960,0.091,31697,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,20.926,0.051,0.960,0.096,29800,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,22.143,0.052,0.923,0.098,27986,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,23.049,0.051,0.842,0.096,26047,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,23.894,0.052,0.802,0.097,24245,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,24.803,0.050,0.717,0.094,22408,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,25.910,0.049,0.640,0.091,20542,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,26.892,0.054,0.640,0.100,18595,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,28.566,0.056,0.602,0.103,16801,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,30.027,0.063,0.602,0.115,14896,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,31.757,0.073,0.602,0.130,13005,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,33.293,0.057,0.408,0.101,11165,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,36.303,0.062,0.365,0.106,9257,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,38.581,0.049,0.234,0.082,7437,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,42.347,0.054,0.193,0.085,5591,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,45.692,0.000,0.000,0.000,3746,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,49.268,0.000,0.000,0.000,1858,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,63.121,0.000,0.000,0.000,0,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,0.000,0.035,1.000,0.068,44724,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,3.775,0.037,1.000,0.071,42864,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,4.241,0.038,1.000,0.074,41008,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,4.557,0.040,1.000,0.077,39131,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,4.950,0.042,1.000,0.081,37258,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,5.161,0.044,1.000,0.085,35421,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,5.348,0.047,1.000,0.089,33553,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,5.496,0.047,0.959,0.090,31678,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,5.703,0.050,0.959,0.096,29817,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,5.827,0.054,0.959,0.102,27893,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,5.968,0.058,0.959,0.109,26021,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,6.130,0.059,0.920,0.112,24239,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,6.296,0.061,0.873,0.114,22403,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,6.487,0.054,0.705,0.100,20498,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,6.659,0.059,0.705,0.110,18599,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,6.872,0.066,0.705,0.121,16749,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,7.164,0.059,0.559,0.106,14930,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,7.403,0.067,0.559,0.120,13003,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,7.573,0.063,0.445,0.110,11131,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,7.816,0.061,0.362,0.104,9340,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,8.116,0.044,0.209,0.073,7404,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,8.463,0.034,0.123,0.054,5615,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,8.900,0.017,0.041,0.024,3792,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,9.570,0.035,0.041,0.038,1812,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,12.449,0.000,0.000,0.000,55,1568,44724

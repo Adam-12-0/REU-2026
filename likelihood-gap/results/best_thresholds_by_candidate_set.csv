@@ -1,0 +1,13 @@
+candidate set,score category,score column,gold column,gold comparison,threshold,precision,recall,f1,predicted count,gold count,candidate count
+all candidates,avg surprise,candidate avg surprise,is_gold,all gold terms,10.560,0.232,0.571,0.330,17395,7071,69632
+all candidates,avg gap,average gap,is_gold,all gold terms,8.089,0.223,0.550,0.317,17452,7071,69632
+all candidates,surprise,candidate surprise,is_gold,all gold terms,13.855,0.128,1.000,0.228,55073,7071,69632
+all candidates,gap,gap,is_gold,all gold terms,10.256,0.128,1.000,0.227,55143,7071,69632
+phrase candidates,avg surprise,candidate avg surprise,is_gold_phrase,gold phrases only,9.442,0.074,0.883,0.137,18656,1568,44724
+phrase candidates,gap,gap,is_gold_phrase,gold phrases only,31.757,0.073,0.602,0.130,13005,1568,44724
+phrase candidates,avg gap,average gap,is_gold_phrase,gold phrases only,6.872,0.066,0.705,0.121,16749,1568,44724
+phrase candidates,surprise,candidate surprise,is_gold_phrase,gold phrases only,54.238,0.068,0.325,0.113,7458,1568,44724
+word candidates,surprise,candidate surprise,is_gold_word,gold words only,14.274,0.471,0.978,0.636,11425,5503,24908
+word candidates,gap,gap,is_gold_word,gold words only,12.765,0.490,0.831,0.617,9328,5503,24908
+word candidates,avg surprise,candidate avg surprise,is_gold_word,gold words only,10.578,0.378,0.640,0.475,9319,5503,24908
+word candidates,avg gap,average gap,is_gold_word,gold words only,7.411,0.339,0.703,0.457,11403,5503,24908
