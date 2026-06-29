@@ -1,0 +1,2 @@
+thresholding_method,score_type,aggregation,direction,threshold,precision,recall,f1,tp,fp,fn,threshold_plot,counts_plot
+entailment_average,entailment,average,low,0.980,0.252,1.000,0.402,5503,16370,0,nli_predicts/entailment_average/best_threshold_plot.png,nli_predicts/entailment_average/tp_fp_fn_counts.png
