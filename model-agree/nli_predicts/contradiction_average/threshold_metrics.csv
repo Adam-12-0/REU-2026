@@ -1,2 +1,0 @@
-thresholding_method,score_type,aggregation,direction,threshold,precision,recall,f1,tp,fp,fn,threshold_plot,counts_plot
-contradiction_average,contradiction,average,high,0.000,0.251,1.000,0.401,5503,16436,0,nli_predicts/contradiction_average/best_threshold_plot.png,nli_predicts/contradiction_average/tp_fp_fn_counts.png
