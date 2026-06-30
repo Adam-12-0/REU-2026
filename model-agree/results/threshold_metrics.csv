@@ -1,4 +1,0 @@
-score_column,direction,threshold,precision,recall,f1,tp,fp,fn,threshold_plot,counts_plot
-mean_similarity,low,0.812,0.260,0.963,0.410,5301,15070,202,results/mean_similarity_threshold_curve.png,results/mean_similarity_best_threshold_counts.png
-min_similarity,low,0.778,0.261,0.994,0.414,5470,15471,33,results/min_similarity_threshold_curve.png,results/min_similarity_best_threshold_counts.png
-std_similarity,high,0.050,0.269,0.954,0.419,5252,14290,251,results/std_similarity_threshold_curve.png,results/std_similarity_best_threshold_counts.png
