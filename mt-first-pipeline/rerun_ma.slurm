@@ -7,7 +7,6 @@
 #SBATCH --exclude=evc26,evc44
 #SBATCH --time=48:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=va608804@ucf.edu
 #SBATCH --output=ma-rerun-%j.out
 #SBATCH --error=ma-rerun-%j.err
 
