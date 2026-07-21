@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --job-name=driver_GZA
+#SBATCH --job-name=driver
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=2G
 #SBATCH --time=00:10:00
-#SBATCH --output=dGZA-%j.out
-#SBATCH --error=dGZA-%j.err
+#SBATCH --output=d-%j.out
+#SBATCH --error=d-%j.err
 
 set -euo pipefail
 
