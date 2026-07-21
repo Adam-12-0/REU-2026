@@ -1,33 +1,95 @@
-# REU 2026
+# REU 2026: Detecting Specialized Language in Text
 
-This repository supports the REU 2026 project on detecting and defining specialized language in text.
+This repository contains an experimental NLP pipeline for finding specialized language in context, including slang, jargon, acronyms, complex terms, idioms, and multiword expressions.
 
-The current work focuses on identifying candidate terms that may be slang, domain-specific, unstable across translation, or otherwise specialized. The project uses multiple scoring methods so candidates can be compared across complementary signals instead of relying on a single detector.
+The current system uses a Machine Translation first, or MT-first, architecture. Machine Translation proposes specialized words and consecutive phrase candidates. Three downstream detectors then rescore those candidates, and a logistic model combines the downstream decisions.
 
-## Project Focus
+## Current pipeline
 
-The initial methods developed so far are:
+The active implementation is in [`mt-first-pipeline`](mt-first-pipeline/README.md).
 
-- Surface clues: scores candidates using features such as frequency, acronyms, digits, symbols, emojis, repeated characters, and corpus behavior.
-- Language surprise: masks candidate words or phrases and uses XLM-RoBERTa fill-mask likelihood gaps to estimate whether a token is unexpected in context.
-- Machine translation instability: translates text out of English and back into English, then uses fuzzy matching and named entity checks to detect terms that changed, disappeared, or remained untranslated.
+```text
+Input sentences
+      |
+      v
+Machine Translation word detection
+      |
+      +--> all word candidates
+      |
+      +--> consecutive phrases from MT-positive words
+                    |
+                    v
+        Surface Clues, Likelihood Gap,
+        and Model Agreement in parallel
+                    |
+                    v
+             Logistic fusion
+                    |
+                    v
+       Final word and phrase predictions
+```
 
-The working dataset referenced in the weekly updates is `acader/genz-alpha-slangs`.
+Machine Translation serves two purposes:
 
-## Current Status
+1. It produces the first specialized-word predictions.
+2. It limits expensive downstream processing to promising words and phrases.
 
-The repository is being set up as a shared workspace for the mentoring project. Code will be added by the student, and this README can be expanded later with:
+The downstream fusion stage currently combines three binary reranker predictions: Surface Clues, Likelihood Gap, and Model Agreement. Machine Translation is the proposal gate and is not included again as a logistic-regression feature.
 
-- installation instructions
-- dataset setup
-- model and environment requirements
-- commands for running each method
-- evaluation results
-- examples of expected inputs and outputs
+## Detection methods
 
-## Project Notes
+| Method | Signal | Current role |
+| --- | --- | --- |
+| Machine Translation | Instability across four round-trip translations, fuzzy matching, and named-entity checks | Candidate proposal and phrase generation |
+| Surface Clues | Rarity, capitalization, digits, symbols, and repeated characters | Downstream candidate scoring |
+| Likelihood Gap | XLM-RoBERTa masked-language-model surprise | Downstream candidate scoring |
+| Model Agreement | Disagreement among contextual definitions from three language models | Downstream candidate scoring |
 
-The week 3 through week 5 updates describe progress on the first three methods, including threshold exploration, candidate type experiments, multilingual translation tests, and early comparisons between method performance.
+## Repository layout
+
+| Path | Purpose |
+| --- | --- |
+| `mt-first-pipeline/` | Active end-to-end Slurm pipeline |
+| `surface-clues/` | Earlier standalone Surface Clues experiments |
+| `likelihood-gap/` | Earlier standalone Likelihood Gap experiments and saved results |
+| `mach-translation/` | Earlier language-specific, judge, and layered MT experiments |
+| `model-agree/` | Earlier standalone Model Agreement experiments and saved results |
+
+The standalone folders document the development of each detector. They are useful for historical experiments, but they are not the current end-to-end pipeline.
+
+## Input data
+
+The MT-first pipeline expects a normalized CSV with these columns:
+
+| Column | Meaning |
+| --- | --- |
+| `sentence` | Source sentence |
+| `gold_terms` | Annotated specialized term or phrase |
+| `term_type` | Annotation category |
+| `source_dataset` | Dataset identifier |
+| `is_single_word` | Binary flag for a one-word annotation |
+| `is_multiword` | Binary flag for a multiword annotation |
+
+Several normalized research datasets are included in `mt-first-pipeline/`. See the pipeline README for configuration and execution instructions.
+
+## Current evaluation status
+
+The pipeline is research code and its reported metrics should be treated as provisional. The current audit identified issues that must be corrected before results are presented as held-out test performance:
+
+1. The final Model Agreement threshold is applied in the wrong score direction.
+2. Gold phrases that are not generated can be omitted from the recall denominator.
+3. Detector thresholds and logistic fusion are selected and evaluated on the same rows.
+4. Binary downstream features create very few fusion input patterns, which can make different fusion rules produce identical predictions.
+
+These issues affect evaluation and fusion behavior, not the intended MT-first architecture itself.
+
+## Running the project
+
+The current pipeline targets a Slurm cluster with GPU nodes and a configured Python environment. Start with the detailed instructions in [`mt-first-pipeline/README.md`](mt-first-pipeline/README.md).
+
+## Project history
+
+The weekly presentations document the progression from standalone detectors to consecutive phrase generation, fusion experiments, and the MT-first pipeline. Week 7 introduces consecutive candidates and fusion. Week 8 presents the explicit MT-first execution flow.
 
 ## Contributors
 
