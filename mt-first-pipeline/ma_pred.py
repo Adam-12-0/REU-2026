@@ -176,7 +176,7 @@ def main():
         output_df["ma_score"] = 1.0 - output_df["mean_similarity"].astype(float)
     output_df["ma_pred"] = 0
     score_mask = output_df["mt_pred"].apply(to_binary).eq(1) & output_df["ma_score"].notna()
-    output_df.loc[score_mask, "ma_pred"] = (output_df.loc[score_mask, "ma_score"] <= threshold).astype(int)
+    output_df.loc[score_mask, "ma_pred"] = (output_df.loc[score_mask, "mean_similarity"] <= threshold).astype(int)
     output_df = apply_phrase_picker(output_df)
     output_df = output_df[output_columns(output_df)]
 
