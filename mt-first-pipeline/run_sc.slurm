@@ -4,7 +4,6 @@
 #SBATCH --mem=64G
 #SBATCH --time=20:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=va608804@ucf.edu
 #SBATCH --output=sc-%j.out
 #SBATCH --error=sc-%j.err
 
