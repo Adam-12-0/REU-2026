@@ -443,6 +443,8 @@ def evaluate_thresholds(candidates_df, num_thresholds):
           ascending=[False, False, False, False],
           kind="mergesort",
       ).index[0]
+      threshold_df.loc[best_idx, ["is_best", "selected_for_prediction"]]=1
+      return threshold_df
 
 
 def main():
