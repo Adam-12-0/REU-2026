@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=sc
-#SBATCH --cpus-per-task=8
-#SBATCH --mem=64G
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=16G
 #SBATCH --time=20:00:00
 #SBATCH --mail-type=ALL
 #SBATCH --output=sc-%j.out
