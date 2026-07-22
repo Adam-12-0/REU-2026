@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=lg
 #SBATCH --gres=gpu:1
-#SBATCH --cpus-per-task=8
-#SBATCH --mem=128G
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
 #SBATCH --time=08:00:00
 #SBATCH --mail-type=ALL
 #SBATCH --output=lg-%j.out
