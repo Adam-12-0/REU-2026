@@ -397,12 +397,21 @@ def score_sentence_words(row, generator, fuzzy_threshold, batch_size, nlp):
 
 
 def normalize_scores(values):
-    values = values.astype(float)
-    min_value = values.min()
-    max_value = values.max()
-    if max_value == min_value:
-        return pd.Series(0.0, index=values.index)
-    return (values - min_value) / (max_value - min_value)
+    values = pd.to_numeric(values, errors="raise").astype(float)
+    total_languages = len(LANGUAGES)
+
+    if total_languages <= 0:
+        raise ValueError("LANGUAGES must contain at least one language.")
+
+    invalid = (values < 0) | (values > total_languages)
+    if invalid.any():
+        invalid_values = sorted(values.loc[invalid].unique().tolist())
+        raise ValueError(
+            f"specialized_votes must be between 0 and {total_languages}; "
+            f"found {invalid_values}"
+        )
+
+    return values / float(total_languages)
 
 
 def build_thresholds(scores, num_thresholds):
