@@ -438,12 +438,11 @@ def evaluate_thresholds(candidates_df, num_thresholds):
         )
     threshold_df = pd.DataFrame(rows)
     if not threshold_df.empty:
-        best_idx = threshold_df.sort_values(
-            ["recall", "f1", "precision"],
-            ascending=False,
-        ).index[0]
-        threshold_df.loc[best_idx, ["is_best", "selected_for_prediction"]] = 1
-    return threshold_df
+      best_idx = threshold_df.sort_values(
+          ["f1", "precision", "recall", "threshold"],
+          ascending=[False, False, False, False],
+          kind="mergesort",
+      ).index[0]
 
 
 def main():

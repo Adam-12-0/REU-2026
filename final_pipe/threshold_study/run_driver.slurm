@@ -10,8 +10,8 @@ set -euo pipefail
 
 cd "$SLURM_SUBMIT_DIR"
 
-DATASET="genz_b_normalized.csv"
-NAME="genz_b"
+DATASET="genz_normalized.csv"
+NAME="genz_a_F1"
 SOURCE_IS_ENGLISH="1"
 OUTDIR="pipeline_outputs/${NAME}"
 LOGDIR="$OUTDIR/logs"

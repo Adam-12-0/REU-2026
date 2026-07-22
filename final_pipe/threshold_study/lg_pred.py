@@ -48,8 +48,8 @@ def load_avg_gap_threshold(path):
     ]
     if selected.empty:
         selected = df.sort_values(
-            ["precision", "f1", "recall", "threshold"],
-            ascending=[False, False, False, True],
+            ["f1", "precision", "recall", "threshold"],
+            ascending=[False, False, False, False],
         ).head(1)
     if selected.empty:
         raise ValueError(f"Could not find selected avg gap threshold in {path}")

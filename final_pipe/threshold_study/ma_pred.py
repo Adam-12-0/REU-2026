@@ -43,7 +43,7 @@ def load_selected_threshold(path):
     require_columns(thresholds, ["threshold", "selected_for_prediction"], path)
     selected = thresholds[thresholds["selected_for_prediction"].astype(int).eq(1)]
     if selected.empty:
-        selected = thresholds.sort_values(["precision", "f1", "recall", "threshold"], ascending=[False, False, False, True]).head(1)
+        selected = thresholds.sort_values(["f1", "precision", "recall", "threshold"], ascending=[False, False, False, True]).head(1)
     if selected.empty:
         raise ValueError(f"No selected threshold found in {path}")
     return float(selected.iloc[0]["threshold"])

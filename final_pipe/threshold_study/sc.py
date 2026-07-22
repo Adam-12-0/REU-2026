@@ -383,7 +383,7 @@ def evaluate_thresholds(cand_df):
 
 def select_best_threshold(threshold_df):
     return threshold_df.sort_values(
-        ["precision", "f1", "recall", "threshold"],
+        ["f1", "precision", "recall", "threshold"],
         ascending=[False, False, False, True],
     ).iloc[0]
 

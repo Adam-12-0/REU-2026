@@ -52,7 +52,7 @@ python3 -u "$MT_JUDGE_SCRIPT" \
   
 python3 -u mt_judge_predictions.py \
   --scores "$METHOD_OUTDIR/_mt_word_scores_tmp.csv" \
-  --threshold 0.75 \
+  --thresholds "$METHOD_OUTDIR/thr_metrics.csv" \
   --output "$METHOD_OUTDIR/mt_preds_sw.csv"
 rm -f "$METHOD_OUTDIR/_mt_word_scores_tmp.csv"
 
