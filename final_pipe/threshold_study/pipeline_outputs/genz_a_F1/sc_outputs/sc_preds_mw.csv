@@ -1,0 +1,30 @@
+sentence_id,sentence,candidate,cand_norm,cand_type,is_gold,token_pos,component_token_positions,mt_pred,sc_score,sc_pred,mt_score,is_named_entity,gold_terms,source_dataset,term_type,spanish_sentence,spanish_back_to_english_sentence,spanish_best_back_translation_word,spanish_fuzz_ratio,spanish_specialized,spanish_term_failed_to_translate,arabic_sentence,arabic_back_to_english_sentence,arabic_best_back_translation_word,arabic_fuzz_ratio,arabic_specialized,arabic_term_failed_to_translate,chinese_sentence,chinese_back_to_english_sentence,chinese_best_back_translation_word,chinese_fuzz_ratio,chinese_specialized,chinese_term_failed_to_translate,japanese_sentence,japanese_back_to_english_sentence,japanese_best_back_translation_word,japanese_fuzz_ratio,japanese_specialized,japanese_term_failed_to_translate,specialized_votes,normal_votes,zipf,rare_or_unknown,is_acronym,has_digit,has_symbol,has_repeated_char
+1,"Homie, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,4|5,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.82,0.0,0.0,0.0,0.0,0.0
+3,"Homie, pull up or stay sus",pull up,pull up,is_multiword,0,1,1|2,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.82,0.0,0.0,0.0,0.0,0.0
+5,"Bro, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1|2,1,0.42857142857142855,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.58,1.0,0.0,0.0,0.0,0.0
+11,"Bruh, you ghosted again",you ghosted,you ghosted,is_multiword,0,1,1|2,1,0.42857142857142855,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.66,1.0,0.0,0.0,0.0,0.0
+12,"Yo, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1|2,1,0.42857142857142855,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.58,1.0,0.0,0.0,0.0,0.0
+14,"Sis, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,4|5,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.82,0.0,0.0,0.0,0.0,0.0
+15,"Bruh, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1|2,1,0.42857142857142855,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.58,1.0,0.0,0.0,0.0,0.0
+16,"Dude, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1|2,1,0.42857142857142855,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.58,1.0,0.0,0.0,0.0,0.0
+19,"Mate, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,4|5,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.82,0.0,0.0,0.0,0.0,0.0
+23,"Yo, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,4|5,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.82,0.0,0.0,0.0,0.0,0.0
+24,"Mate, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1|2,1,0.42857142857142855,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.58,1.0,0.0,0.0,0.0,0.0
+25,"Sis, big yikes",big yikes,big yikes,is_multiword,0,1,1|2,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.44,0.0,0.0,0.0,0.0,0.0
+28,"Fam, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1|2,1,0.42857142857142855,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.58,1.0,0.0,0.0,0.0,0.0
+29,"Yo, pull up or stay sus",pull up,pull up,is_multiword,0,1,1|2,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.82,0.0,0.0,0.0,0.0,0.0
+31,"Bro, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,2|3,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,0.0,0.0,0.0,0.0,0.0
+33,"Fam, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,2|3,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,0.0,0.0,0.0,0.0,0.0
+35,"Sis, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,2|3,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,0.0,0.0,0.0,0.0,0.0
+36,"Dude, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,2|3,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,0.0,0.0,0.0,0.0,0.0
+39,"Dude, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,4|5,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.82,0.0,0.0,0.0,0.0,0.0
+44,"Fam, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,4|5,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.82,0.0,0.0,0.0,0.0,0.0
+48,"Homie, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,2|3,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,0.0,0.0,0.0,0.0,0.0
+49,"Sis, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1|2,1,0.42857142857142855,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.58,1.0,0.0,0.0,0.0,0.0
+56,"Bruh, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,2|3,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,0.0,0.0,0.0,0.0,0.0
+57,"Yo, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,2|3,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,0.0,0.0,0.0,0.0,0.0
+66,"Homie, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1|2,1,0.42857142857142855,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.58,1.0,0.0,0.0,0.0,0.0
+70,"Bruh, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,4|5,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.82,0.0,0.0,0.0,0.0,0.0
+72,"Mate, touch some grass",touch some,touch some,is_multiword,0,1,1|2,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.91,0.0,0.0,0.0,0.0,0.0
+78,"Mate, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,2|3,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.06,0.0,0.0,0.0,0.0,0.0
+79,"Dude, big yikes",big yikes,big yikes,is_multiword,0,1,1|2,1,0.0,0,1.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.44,0.0,0.0,0.0,0.0,0.0

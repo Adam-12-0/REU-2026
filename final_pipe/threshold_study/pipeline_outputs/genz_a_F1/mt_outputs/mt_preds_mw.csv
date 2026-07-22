@@ -1,0 +1,30 @@
+sentence_id,sentence,candidate,cand_norm,cand_type,is_gold,token_pos,mt_score,mt_pred
+1,"Homie, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,1.0,1
+3,"Homie, pull up or stay sus",pull up,pull up,is_multiword,0,1,1.0,1
+5,"Bro, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1.0,1
+11,"Bruh, you ghosted again",you ghosted,you ghosted,is_multiword,0,1,1.0,1
+12,"Yo, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1.0,1
+14,"Sis, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,1.0,1
+15,"Bruh, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1.0,1
+16,"Dude, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1.0,1
+19,"Mate, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,1.0,1
+23,"Yo, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,1.0,1
+24,"Mate, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1.0,1
+25,"Sis, big yikes",big yikes,big yikes,is_multiword,0,1,1.0,1
+28,"Fam, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1.0,1
+29,"Yo, pull up or stay sus",pull up,pull up,is_multiword,0,1,1.0,1
+31,"Bro, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,1.0,1
+33,"Fam, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,1.0,1
+35,"Sis, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,1.0,1
+36,"Dude, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,1.0,1
+39,"Dude, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,1.0,1
+44,"Fam, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,1.0,1
+48,"Homie, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,1.0,1
+49,"Sis, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1.0,1
+56,"Bruh, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,1.0,1
+57,"Yo, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,1.0,1
+66,"Homie, lowkey flexin’",lowkey flexin,lowkey flexin,is_multiword,0,1,1.0,1
+70,"Bruh, this vibe is straight mid",straight mid,straight mid,is_multiword,0,4,1.0,1
+72,"Mate, touch some grass",touch some,touch some,is_multiword,0,1,1.0,1
+78,"Mate, whole squad waitin’",squad waitin,squad waitin,is_multiword,0,2,1.0,1
+79,"Dude, big yikes",big yikes,big yikes,is_multiword,0,1,1.0,1
