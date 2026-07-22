@@ -3,8 +3,8 @@
 #SBATCH --partition=normal
 #SBATCH --gres=gpu:nvidia_h100_pcie:1
 #SBATCH --constraint=h100
-#SBATCH --cpus-per-task=8
-#SBATCH --mem=64G
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
 #SBATCH --exclude=evc26,evc44
 #SBATCH --time=95:00:00
 #SBATCH --mail-type=ALL
