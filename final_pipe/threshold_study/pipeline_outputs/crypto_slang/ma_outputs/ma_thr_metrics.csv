@@ -1,0 +1,26 @@
+score_category,score_column,prediction_rule,threshold,precision,recall,f1,tp,fp,fn,tn,predicted_count,gold_count,candidate_count,is_best,selected_for_prediction
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.009752,0.0,0.0,0.0,0,1,80,294,1,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.096569,0.3125,0.0625,0.10416666666666667,5,11,75,284,16,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.18918,0.21875,0.0875,0.12499999999999997,7,25,73,270,32,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.236667,0.2127659574468085,0.125,0.15748031496062995,10,37,70,258,47,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.304711,0.20634920634920634,0.1625,0.1818181818181818,13,50,67,245,63,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.36434,0.16666666666666666,0.1625,0.16455696202531647,13,65,67,230,78,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.400741,0.1702127659574468,0.2,0.18390804597701152,16,78,64,217,94,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.456343,0.15454545454545454,0.2125,0.1789473684210526,17,93,63,202,110,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.494714,0.144,0.225,0.17560975609756097,18,107,62,188,125,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.518078,0.14893617021276595,0.2625,0.19004524886877827,21,120,59,175,141,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.549102,0.15384615384615385,0.3,0.2033898305084746,24,132,56,163,156,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.574438,0.14534883720930233,0.3125,0.19841269841269843,25,147,55,148,172,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.608021,0.1595744680851064,0.375,0.2238805970149254,30,158,50,137,188,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.628826,0.15270935960591134,0.3875,0.21908127208480566,31,172,49,123,203,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.660132,0.1506849315068493,0.4125,0.22073578595317722,33,186,47,109,219,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.674775,0.17094017094017094,0.5,0.25477707006369427,40,194,40,101,234,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.689247,0.172,0.5375,0.26060606060606056,43,207,37,88,250,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.706593,0.17735849056603772,0.5875,0.27246376811594203,47,218,33,77,265,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.726205,0.18861209964412812,0.6625,0.2936288088642659,53,228,27,67,281,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.750295,0.19528619528619529,0.725,0.3076923076923077,58,239,22,56,297,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.763656,0.20192307692307693,0.7875,0.3214285714285714,63,249,17,46,312,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.785021,0.21036585365853658,0.8625,0.338235294117647,69,259,11,36,328,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.809943,0.20930232558139536,0.9,0.339622641509434,72,272,8,23,344,80,375,0,0
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.840475,0.21727019498607242,0.975,0.35535307517084286,78,281,2,14,359,80,375,1,1
+mean_similarity,mean_similarity,mean_similarity <= threshold,0.929121,0.21390374331550802,1.0,0.3524229074889868,80,294,0,1,374,80,375,0,0

@@ -65,6 +65,7 @@ def parse_args():
     parser.add_argument("--model-id", default=DEFAULT_MODEL)
     parser.add_argument("--gpu-id", type=int, default=0)
     parser.add_argument("--limit-rows", type=int, default=None)
+    parser.add_argument("--start-sentence", type=int, default=0)
     parser.add_argument("--fuzzy-threshold", type=int, default=93)
     parser.add_argument("--batch-size", type=int, default=4)
     parser.add_argument("--num-thresholds", type=int, default=25)
@@ -144,7 +145,7 @@ def is_gold_candidate(candidate_norm, gold_norms):
     return 0
 
 
-def load_normalized_dataset(path, limit_rows):
+def load_normalized_dataset(path, limit_rows, start_sentence=0):
     df = pd.read_csv(path)
     require_columns(df, REQUIRED_DATASET_COLUMNS, path)
     df = df.dropna(subset=["sentence", "gold_terms"]).copy()
@@ -152,14 +153,14 @@ def load_normalized_dataset(path, limit_rows):
     df["gold_norm"] = df["gold_terms"].apply(normalize_text)
     df["is_single_word"] = df["is_single_word"].apply(to_binary)
 
-    if limit_rows is not None:
-        unique_sentences = df["sentence"].drop_duplicates().head(limit_rows)
-        df = df[df["sentence"].isin(unique_sentences)].copy()
-
+    all_sentences = df["sentence"].drop_duplicates().tolist()
+    end_sentence = None if limit_rows is None else start_sentence + limit_rows
+    selected_sentences = all_sentences[start_sentence:end_sentence]
+    df = df[df["sentence"].isin(selected_sentences)].copy()
     rows = []
     sentence_ids = {
         sentence: index
-        for index, sentence in enumerate(df["sentence"].drop_duplicates().tolist())
+        for index, sentence in enumerate(all_sentences)
     }
     for sentence, group in df.groupby("sentence", sort=False):
         gold_word_norms = sorted(
@@ -476,7 +477,7 @@ def main():
 
     generator = load_model(args.model_id, args.gpu_id)
 
-    dataset_df = load_normalized_dataset(args.dataset, args.limit_rows)
+    dataset_df = load_normalized_dataset(args.dataset, args.limit_rows, args.start_sentence)
     print(f"Loaded {len(dataset_df)} unique sentences.", flush=True)
 
     all_rows = []

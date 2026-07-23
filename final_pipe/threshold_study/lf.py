@@ -3,6 +3,7 @@
 import argparse
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import regex as re
 from sklearn.linear_model import LogisticRegression
@@ -21,6 +22,10 @@ def parse_args():
     parser.add_argument("--thresholds-output", type=Path, required=True)
     parser.add_argument("--weights-output", type=Path, required=True)
     parser.add_argument("--metrics-output", type=Path, required=True)
+    parser.add_argument("--thresholds-input", type=Path, default=None,
+                        help="Optional calibration threshold table to apply.")
+    parser.add_argument("--weights-input", type=Path, default=None,
+                        help="Optional calibrated logistic-regression weights to apply.")
     return parser.parse_args()
 
 
@@ -185,6 +190,32 @@ def write_weights(model, output_path):
     pd.concat([weights_df.sort_values("abs_weight", ascending=False), intercept], ignore_index=True).to_csv(output_path, index=False)
 
 
+def load_fixed_weights(path):
+    weights_df = pd.read_csv(path)
+    require_columns(weights_df, ["feature", "weight"], path)
+    weights = weights_df.set_index("feature")["weight"]
+    missing = [feature for feature in [*PRED_COLUMNS, "intercept"] if feature not in weights.index]
+    if missing:
+        raise ValueError(f"{path} is missing calibrated weights for: {missing}")
+    return {feature: float(weights[feature]) for feature in PRED_COLUMNS}, float(weights["intercept"]), weights_df
+
+
+def load_selected_threshold(path):
+    thresholds_df = pd.read_csv(path)
+    require_columns(thresholds_df, ["threshold"], path)
+    for column in ("selected_for_prediction", "is_best"):
+        if column in thresholds_df.columns:
+            selected = thresholds_df[thresholds_df[column].apply(to_binary).eq(1)]
+            if not selected.empty:
+                return float(selected.iloc[0]["threshold"])
+    if thresholds_df.empty:
+        raise ValueError(f"No threshold found in {path}")
+    return float(thresholds_df.sort_values(
+        ["f1", "precision", "recall", "threshold"],
+        ascending=[False, False, False, True],
+    ).iloc[0]["threshold"])
+
+
 def main():
     args = parse_args()
     df = pd.read_csv(args.input)
@@ -193,19 +224,28 @@ def main():
     for column in PRED_COLUMNS:
         df[column] = df[column].apply(to_binary)
     df["is_gold"] = df["is_gold"].apply(to_binary)
-    if df["is_gold"].nunique() < 2:
+    if args.weights_input is None and df["is_gold"].nunique() < 2:
         raise ValueError("Need both positive and negative gold labels to train logistic regression.")
 
     x = df[PRED_COLUMNS]
-    y = df["is_gold"].astype(int)
-    model = LogisticRegression(max_iter=1000, class_weight="balanced")
-    model.fit(x, y)
-    df["lf_score"] = model.predict_proba(x)[:, 1]
+    if args.weights_input is not None:
+        fixed_weights, intercept, calibrated_weights_df = load_fixed_weights(args.weights_input)
+        linear_score = sum(x[feature].astype(float) * weight for feature, weight in fixed_weights.items()) + intercept
+        df["lf_score"] = 1.0 / (1.0 + np.exp(-linear_score))
+        calibrated_weights_df.to_csv(args.weights_output, index=False)
+    else:
+        y = df["is_gold"].astype(int)
+        model = LogisticRegression(max_iter=1000, class_weight="balanced")
+        model.fit(x, y)
+        df["lf_score"] = model.predict_proba(x)[:, 1]
 
     thresholds_df = threshold_rows(df)
     thresholds_df.to_csv(args.thresholds_output, index=False)
     best = thresholds_df[thresholds_df["is_best"].eq(1)].iloc[0]
-    df["lf_pred"] = (df["lf_score"] >= float(best["threshold"])).astype(int)
+    applied_threshold = load_selected_threshold(args.thresholds_input) if args.thresholds_input is not None else float(best["threshold"])
+    thresholds_df["selected_for_prediction"] = thresholds_df["threshold"].eq(applied_threshold).astype(int)
+    thresholds_df.to_csv(args.thresholds_output, index=False)
+    df["lf_pred"] = (df["lf_score"] >= applied_threshold).astype(int)
     df = apply_phrase_picker(df)
 
     single_df = df[df["cand_type"].astype(str).str.lower().eq("is_single_word")].copy()
@@ -213,7 +253,8 @@ def main():
     df.to_csv(args.all_output, index=False)
     single_df.to_csv(args.single_output, index=False)
     multi_df.to_csv(args.multi_output, index=False)
-    write_weights(model, args.weights_output)
+    if args.weights_input is None:
+        write_weights(model, args.weights_output)
     write_metrics(df, args.metrics_output)
     print(f"Wrote LF predictions to {args.all_output}", flush=True)
 

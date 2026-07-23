@@ -7,6 +7,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from lg_pred import apply_phrase_picker
 import regex as re
 import torch
 from rapidfuzz import fuzz
@@ -407,7 +408,10 @@ def evaluate_thresholds(cand_df, num_thresholds):
     rows = []
 
     for threshold in build_thresholds(scores, num_thresholds):
-        y_pred = (mt_mask & (scores >= threshold)).astype(int)
+        pred_df = eval_df.copy()
+        pred_df["lg_pred"] = (mt_mask & (scores >= threshold)).astype(int)
+        pred_df = apply_phrase_picker(pred_df)
+        y_pred = pred_df["lg_pred"].astype(int).values
         tp, fp, fn, tn = calculate_counts(y_true, y_pred)
         precision, recall, f1 = calculate_metrics(tp, fp, fn)
         rows.append(

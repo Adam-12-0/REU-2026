@@ -56,6 +56,12 @@ def parse_args():
     )
     parser.add_argument("--scoring-output", type=Path, default=None)
     parser.add_argument("--thresholds-output", type=Path, default=None)
+    parser.add_argument(
+        "--thresholds-input",
+        type=Path,
+        default=None,
+        help="Optional calibration threshold table to apply instead of tuning on this dataset.",
+    )
     parser.add_argument("--single-output", type=Path, default=None)
     parser.add_argument("--multi-output", type=Path, default=None)
     parser.add_argument("--all-output", type=Path, default=None)
@@ -388,6 +394,19 @@ def select_best_threshold(threshold_df):
     ).iloc[0]
 
 
+def load_selected_threshold(path):
+    threshold_df = pd.read_csv(path)
+    require_columns(threshold_df, ["threshold"], path)
+    for column in ("selected_for_prediction", "is_best"):
+        if column in threshold_df.columns:
+            selected = threshold_df[threshold_df[column].apply(to_binary).eq(1)]
+            if not selected.empty:
+                return float(selected.iloc[0]["threshold"])
+    if threshold_df.empty:
+        raise ValueError(f"No threshold found in {path}")
+    return float(select_best_threshold(threshold_df)["threshold"])
+
+
 def output_columns(df):
     preferred = [
         "sentence_id",
@@ -430,9 +449,15 @@ def main():
     threshold_df = evaluate_thresholds(cand_df)
     best = select_best_threshold(threshold_df)
     threshold_df.loc[threshold_df["threshold"].eq(best["threshold"]), "is_best"] = 1
+    applied_threshold = (
+        load_selected_threshold(args.thresholds_input)
+        if args.thresholds_input is not None
+        else float(best["threshold"])
+    )
+    threshold_df["selected_for_prediction"] = threshold_df["threshold"].eq(applied_threshold).astype(int)
     threshold_df.to_csv(thresholds_output, index=False)
 
-    final_df = apply_phrase_picker(apply_threshold(cand_df, float(best["threshold"])))
+    final_df = apply_phrase_picker(apply_threshold(cand_df, applied_threshold))
     columns = output_columns(final_df)
     final_df = final_df[columns]
 
