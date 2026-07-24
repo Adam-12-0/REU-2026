@@ -1,4 +1,12 @@
 pipeline_outputs/
+# Dataset-level merged outputs are curated explicitly; transient partition outputs stay local.
+!pipeline_outputs/crypto_slang/
+!pipeline_outputs/genz_b/
+!pipeline_outputs/medslangbert/
+!pipeline_outputs/polish_youth_slang/
+!pipeline_outputs/lm_lex/
+pipeline_outputs/*_batch_*/
+pipeline_outputs/*_part*/
 *.out
 *.err
 .hf_token.env
