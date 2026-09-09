@@ -1,0 +1,1 @@
+To note: This directory's pipeline determines thresholds per dataset using sweeps. The thresholds that are swept are only the final ones, referring to where the line is drawn for a score to be labelled as specialized or not. Thresholds throughout each process have already been set.
