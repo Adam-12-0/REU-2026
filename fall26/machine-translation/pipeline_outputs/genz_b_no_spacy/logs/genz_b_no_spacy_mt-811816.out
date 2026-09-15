@@ -1,0 +1,78 @@
+Dataset: genz_b_normalized.csv
+Name: genz_b_no_spacy
+SOURCE_LANGUAGE: pl
+MT output directory: pipeline_outputs/genz_b_no_spacy/mt_outputs
+Starting MT judge run.
+Dataset: genz_b_normalized.csv
+Language: pl
+Output directory: pipeline_outputs/genz_b_no_spacy/mt_outputs
+Loading spaCy NER model: None
+Loading tokenizer: meta-llama/Meta-Llama-3.1-8B-Instruct
+Loading model: meta-llama/Meta-Llama-3.1-8B-Instruct
+Using 4-bit BitsAndBytes quantization.
+Model loaded successfully.
+Loaded 1731 unique sentences.
+Processing sentence 1/1731
+Processing sentence 2/1731
+Processing sentence 3/1731
+Processing sentence 4/1731
+Processing sentence 5/1731
+Processing sentence 6/1731
+Processing sentence 7/1731
+Processing sentence 8/1731
+Processing sentence 9/1731
+Processing sentence 10/1731
+Processing sentence 11/1731
+Processing sentence 12/1731
+Processing sentence 13/1731
+Processing sentence 14/1731
+Processing sentence 15/1731
+Processing sentence 16/1731
+Processing sentence 17/1731
+Processing sentence 18/1731
+Processing sentence 19/1731
+Processing sentence 20/1731
+Processing sentence 21/1731
+Processing sentence 22/1731
+Processing sentence 23/1731
+Processing sentence 24/1731
+Processing sentence 25/1731
+Processing sentence 26/1731
+Processing sentence 27/1731
+Processing sentence 28/1731
+Processing sentence 29/1731
+Processing sentence 30/1731
+Processing sentence 31/1731
+Processing sentence 32/1731
+Processing sentence 33/1731
+Processing sentence 34/1731
+Processing sentence 35/1731
+Processing sentence 36/1731
+Processing sentence 37/1731
+Processing sentence 38/1731
+Processing sentence 39/1731
+Processing sentence 40/1731
+Processing sentence 41/1731
+Processing sentence 42/1731
+Processing sentence 43/1731
+Processing sentence 44/1731
+Processing sentence 45/1731
+Processing sentence 46/1731
+Processing sentence 47/1731
+Processing sentence 48/1731
+Processing sentence 49/1731
+Processing sentence 50/1731
+Processing sentence 51/1731
+Processing sentence 52/1731
+Processing sentence 53/1731
+Processing sentence 54/1731
+Processing sentence 55/1731
+Processing sentence 56/1731
+Processing sentence 57/1731
+Processing sentence 58/1731
+Processing sentence 59/1731
+Processing sentence 60/1731
+Processing sentence 61/1731
+Processing sentence 62/1731
+Processing sentence 63/1731
+Processing sentence 64/1731

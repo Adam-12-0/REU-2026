@@ -1,0 +1,193 @@
+sentence,gold_terms,term_type,source_dataset,is_single_word,is_multiword,start_offset,end_offset
+"Mate, IRL you fold faster than a Walmart chair",fold,slang,genz-alpha-slangs,1,0,14,18
+"Mate, IRL you fold faster than a Walmart chair",IRL,slang,genz-alpha-slangs,1,0,6,9
+"Mate, IRL you fold faster than a Walmart chair",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Homie, this vibe is straight mid",mid,slang,genz-alpha-slangs,1,0,29,32
+"Homie, this vibe is straight mid",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Bro, you ghosted again",ghosted,slang,genz-alpha-slangs,1,0,9,16
+"Bro, you ghosted again",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Homie, pull up or stay sus",sus,slang,genz-alpha-slangs,1,0,23,26
+"Homie, pull up or stay sus",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Bro, skibidi outta here, sigma style",skibidi outta here,slang,genz-alpha-slangs,0,1,5,23
+"Bro, skibidi outta here, sigma style",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Bro, lowkey flexin’",lowkey,slang,genz-alpha-slangs,1,0,5,11
+"Bro, lowkey flexin’",flexin’,slang,genz-alpha-slangs,1,0,12,19
+"Bro, lowkey flexin’",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Bro, pull up or stay sus",sus,slang,genz-alpha-slangs,1,0,21,24
+"Bro, pull up or stay sus",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Yo, you ghosted again",ghosted,slang,genz-alpha-slangs,1,0,8,15
+"Yo, you ghosted again",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Bro, IRL you fold faster than a Walmart chair",fold,slang,genz-alpha-slangs,1,0,13,17
+"Bro, IRL you fold faster than a Walmart chair",IRL,slang,genz-alpha-slangs,1,0,5,8
+"Bro, IRL you fold faster than a Walmart chair",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Bruh, IRL you fold faster than a Walmart chair",fold,slang,genz-alpha-slangs,1,0,14,18
+"Bruh, IRL you fold faster than a Walmart chair",IRL,slang,genz-alpha-slangs,1,0,6,9
+"Bruh, IRL you fold faster than a Walmart chair",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Fam, stop cappin’, lowkey annoyed",cappin’,slang,genz-alpha-slangs,1,0,10,17
+"Fam, stop cappin’, lowkey annoyed",lowkey,slang,genz-alpha-slangs,1,0,19,25
+"Fam, stop cappin’, lowkey annoyed",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Bruh, you ghosted again",ghosted,slang,genz-alpha-slangs,1,0,10,17
+"Bruh, you ghosted again",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Yo, lowkey flexin’",lowkey,slang,genz-alpha-slangs,1,0,4,10
+"Yo, lowkey flexin’",flexin’,slang,genz-alpha-slangs,1,0,11,18
+"Yo, lowkey flexin’",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Mate, pull up or stay sus",sus,slang,genz-alpha-slangs,1,0,22,25
+"Mate, pull up or stay sus",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Sis, this vibe is straight mid",mid,slang,genz-alpha-slangs,1,0,27,30
+"Sis, this vibe is straight mid",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Bruh, lowkey flexin’",lowkey,slang,genz-alpha-slangs,1,0,6,12
+"Bruh, lowkey flexin’",flexin’,slang,genz-alpha-slangs,1,0,13,20
+"Bruh, lowkey flexin’",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Dude, lowkey flexin’",lowkey,slang,genz-alpha-slangs,1,0,6,12
+"Dude, lowkey flexin’",flexin’,slang,genz-alpha-slangs,1,0,13,20
+"Dude, lowkey flexin’",Dude,slang,genz-alpha-slangs,1,0,0,4
+"Bruh, big yikes",yikes,slang,genz-alpha-slangs,1,0,10,15
+"Bruh, big yikes",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Homie, skibidi outta here, sigma style",skibidi outta here,slang,genz-alpha-slangs,0,1,7,25
+"Homie, skibidi outta here, sigma style",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Mate, this vibe is straight mid",mid,slang,genz-alpha-slangs,1,0,28,31
+"Mate, this vibe is straight mid",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Mate, big yikes",yikes,slang,genz-alpha-slangs,1,0,10,15
+"Mate, big yikes",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Bro, this vibe is straight mid",mid,slang,genz-alpha-slangs,1,0,27,30
+"Bro, this vibe is straight mid",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Fam, pull up or stay sus",sus,slang,genz-alpha-slangs,1,0,21,24
+"Fam, pull up or stay sus",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Yo, this vibe is straight mid",mid,slang,genz-alpha-slangs,1,0,26,29
+"Yo, this vibe is straight mid",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Mate, lowkey flexin’",lowkey,slang,genz-alpha-slangs,1,0,6,12
+"Mate, lowkey flexin’",flexin’,slang,genz-alpha-slangs,1,0,13,20
+"Mate, lowkey flexin’",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Sis, big yikes",yikes,slang,genz-alpha-slangs,1,0,9,14
+"Sis, big yikes",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Bruh, skibidi outta here, sigma style",skibidi outta here,slang,genz-alpha-slangs,0,1,6,24
+"Bruh, skibidi outta here, sigma style",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Homie, big yikes",yikes,slang,genz-alpha-slangs,1,0,11,16
+"Homie, big yikes",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Fam, lowkey flexin’",lowkey,slang,genz-alpha-slangs,1,0,5,11
+"Fam, lowkey flexin’",flexin’,slang,genz-alpha-slangs,1,0,12,19
+"Fam, lowkey flexin’",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Yo, pull up or stay sus",sus,slang,genz-alpha-slangs,1,0,20,23
+"Yo, pull up or stay sus",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Homie, touch some grass",touch some grass,slang,genz-alpha-slangs,0,1,7,23
+"Homie, touch some grass",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Bro, whole squad waitin’",whole squad,slang,genz-alpha-slangs,0,1,5,16
+"Bro, whole squad waitin’",waitin’,slang,genz-alpha-slangs,1,0,17,24
+"Bro, whole squad waitin’",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Sis, stop cappin’, lowkey annoyed",cappin’,slang,genz-alpha-slangs,1,0,10,17
+"Sis, stop cappin’, lowkey annoyed",lowkey,slang,genz-alpha-slangs,1,0,19,25
+"Sis, stop cappin’, lowkey annoyed",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Fam, whole squad waitin’",whole squad,slang,genz-alpha-slangs,0,1,5,16
+"Fam, whole squad waitin’",waitin’,slang,genz-alpha-slangs,1,0,17,24
+"Fam, whole squad waitin’",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Bro, stop cappin’, lowkey annoyed",cappin’,slang,genz-alpha-slangs,1,0,10,17
+"Bro, stop cappin’, lowkey annoyed",lowkey,slang,genz-alpha-slangs,1,0,19,25
+"Bro, stop cappin’, lowkey annoyed",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Sis, whole squad waitin’",whole squad,slang,genz-alpha-slangs,0,1,5,16
+"Sis, whole squad waitin’",waitin’,slang,genz-alpha-slangs,1,0,17,24
+"Sis, whole squad waitin’",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Dude, whole squad waitin’",whole squad,slang,genz-alpha-slangs,0,1,6,17
+"Dude, whole squad waitin’",waitin’,slang,genz-alpha-slangs,1,0,18,25
+"Dude, whole squad waitin’",Dude,slang,genz-alpha-slangs,1,0,0,4
+"Yo, touch some grass",touch some grass,slang,genz-alpha-slangs,0,1,4,20
+"Yo, touch some grass",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Mate, skibidi outta here, sigma style",skibidi outta here,slang,genz-alpha-slangs,0,1,6,24
+"Mate, skibidi outta here, sigma style",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Dude, this vibe is straight mid",mid,slang,genz-alpha-slangs,1,0,28,31
+"Dude, this vibe is straight mid",Dude,slang,genz-alpha-slangs,1,0,0,4
+"Dude, skibidi outta here, sigma style",skibidi outta here,slang,genz-alpha-slangs,0,1,6,24
+"Dude, skibidi outta here, sigma style",Dude,slang,genz-alpha-slangs,1,0,0,4
+"Sis, pull up or stay sus",sus,slang,genz-alpha-slangs,1,0,21,24
+"Sis, pull up or stay sus",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Bro, big yikes",yikes,slang,genz-alpha-slangs,1,0,9,14
+"Bro, big yikes",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Bro, touch some grass",touch some grass,slang,genz-alpha-slangs,0,1,5,21
+"Bro, touch some grass",Bro,slang,genz-alpha-slangs,1,0,0,3
+"Fam, this vibe is straight mid",mid,slang,genz-alpha-slangs,1,0,27,30
+"Fam, this vibe is straight mid",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Bruh, pull up or stay sus",sus,slang,genz-alpha-slangs,1,0,22,25
+"Bruh, pull up or stay sus",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Sis, you ghosted again",ghosted,slang,genz-alpha-slangs,1,0,9,16
+"Sis, you ghosted again",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Dude, IRL you fold faster than a Walmart chair",fold,slang,genz-alpha-slangs,1,0,14,18
+"Dude, IRL you fold faster than a Walmart chair",IRL,slang,genz-alpha-slangs,1,0,6,9
+"Dude, IRL you fold faster than a Walmart chair",Dude,slang,genz-alpha-slangs,1,0,0,4
+"Homie, whole squad waitin’",whole squad,slang,genz-alpha-slangs,0,1,7,18
+"Homie, whole squad waitin’",waitin’,slang,genz-alpha-slangs,1,0,19,26
+"Homie, whole squad waitin’",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Sis, lowkey flexin’",lowkey,slang,genz-alpha-slangs,1,0,5,11
+"Sis, lowkey flexin’",flexin’,slang,genz-alpha-slangs,1,0,12,19
+"Sis, lowkey flexin’",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Fam, you ghosted again",ghosted,slang,genz-alpha-slangs,1,0,9,16
+"Fam, you ghosted again",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Mate, stop cappin’, lowkey annoyed",cappin’,slang,genz-alpha-slangs,1,0,11,18
+"Mate, stop cappin’, lowkey annoyed",lowkey,slang,genz-alpha-slangs,1,0,20,26
+"Mate, stop cappin’, lowkey annoyed",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Dude, stop cappin’, lowkey annoyed",cappin’,slang,genz-alpha-slangs,1,0,11,18
+"Dude, stop cappin’, lowkey annoyed",lowkey,slang,genz-alpha-slangs,1,0,20,26
+"Dude, stop cappin’, lowkey annoyed",Dude,slang,genz-alpha-slangs,1,0,0,4
+"Yo, big yikes",yikes,slang,genz-alpha-slangs,1,0,8,13
+"Yo, big yikes",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Fam, touch some grass",touch some grass,slang,genz-alpha-slangs,0,1,5,21
+"Fam, touch some grass",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Yo, skibidi outta here, sigma style",skibidi outta here,slang,genz-alpha-slangs,0,1,4,22
+"Yo, skibidi outta here, sigma style",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Bruh, whole squad waitin’",whole squad,slang,genz-alpha-slangs,0,1,6,17
+"Bruh, whole squad waitin’",waitin’,slang,genz-alpha-slangs,1,0,18,25
+"Bruh, whole squad waitin’",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Yo, whole squad waitin’",whole squad,slang,genz-alpha-slangs,0,1,4,15
+"Yo, whole squad waitin’",waitin’,slang,genz-alpha-slangs,1,0,16,23
+"Yo, whole squad waitin’",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Mate, you ghosted again",ghosted,slang,genz-alpha-slangs,1,0,10,17
+"Mate, you ghosted again",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Sis, IRL you fold faster than a Walmart chair",fold,slang,genz-alpha-slangs,1,0,13,17
+"Sis, IRL you fold faster than a Walmart chair",IRL,slang,genz-alpha-slangs,1,0,5,8
+"Sis, IRL you fold faster than a Walmart chair",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Dude, touch some grass",touch some grass,slang,genz-alpha-slangs,0,1,6,22
+"Dude, touch some grass",Dude,slang,genz-alpha-slangs,1,0,0,4
+"Fam, big yikes",yikes,slang,genz-alpha-slangs,1,0,9,14
+"Fam, big yikes",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Fam, IRL you fold faster than a Walmart chair",fold,slang,genz-alpha-slangs,1,0,13,17
+"Fam, IRL you fold faster than a Walmart chair",IRL,slang,genz-alpha-slangs,1,0,5,8
+"Fam, IRL you fold faster than a Walmart chair",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Yo, stop cappin’, lowkey annoyed",cappin’,slang,genz-alpha-slangs,1,0,9,16
+"Yo, stop cappin’, lowkey annoyed",lowkey,slang,genz-alpha-slangs,1,0,18,24
+"Yo, stop cappin’, lowkey annoyed",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Bruh, touch some grass",touch some grass,slang,genz-alpha-slangs,0,1,6,22
+"Bruh, touch some grass",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Homie, stop cappin’, lowkey annoyed",cappin’,slang,genz-alpha-slangs,1,0,12,19
+"Homie, stop cappin’, lowkey annoyed",lowkey,slang,genz-alpha-slangs,1,0,21,27
+"Homie, stop cappin’, lowkey annoyed",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Homie, lowkey flexin’",lowkey,slang,genz-alpha-slangs,1,0,7,13
+"Homie, lowkey flexin’",flexin’,slang,genz-alpha-slangs,1,0,14,21
+"Homie, lowkey flexin’",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Dude, you ghosted again",ghosted,slang,genz-alpha-slangs,1,0,10,17
+"Dude, you ghosted again",Dude,slang,genz-alpha-slangs,1,0,0,4
+"Sis, skibidi outta here, sigma style",skibidi outta here,slang,genz-alpha-slangs,0,1,5,23
+"Sis, skibidi outta here, sigma style",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Fam, skibidi outta here, sigma style",skibidi outta here,slang,genz-alpha-slangs,0,1,5,23
+"Fam, skibidi outta here, sigma style",Fam,slang,genz-alpha-slangs,1,0,0,3
+"Bruh, this vibe is straight mid",mid,slang,genz-alpha-slangs,1,0,28,31
+"Bruh, this vibe is straight mid",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Dude, pull up or stay sus",sus,slang,genz-alpha-slangs,1,0,22,25
+"Dude, pull up or stay sus",Dude,slang,genz-alpha-slangs,1,0,0,4
+"Mate, touch some grass",touch some grass,slang,genz-alpha-slangs,0,1,6,22
+"Mate, touch some grass",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Homie, you ghosted again",ghosted,slang,genz-alpha-slangs,1,0,11,18
+"Homie, you ghosted again",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Homie, IRL you fold faster than a Walmart chair",fold,slang,genz-alpha-slangs,1,0,15,19
+"Homie, IRL you fold faster than a Walmart chair",IRL,slang,genz-alpha-slangs,1,0,7,10
+"Homie, IRL you fold faster than a Walmart chair",Homie,slang,genz-alpha-slangs,1,0,0,5
+"Sis, touch some grass",touch some grass,slang,genz-alpha-slangs,0,1,5,21
+"Sis, touch some grass",Sis,slang,genz-alpha-slangs,1,0,0,3
+"Yo, IRL you fold faster than a Walmart chair",fold,slang,genz-alpha-slangs,1,0,12,16
+"Yo, IRL you fold faster than a Walmart chair",IRL,slang,genz-alpha-slangs,1,0,4,7
+"Yo, IRL you fold faster than a Walmart chair",Yo,slang,genz-alpha-slangs,1,0,0,2
+"Bruh, stop cappin’, lowkey annoyed",cappin’,slang,genz-alpha-slangs,1,0,11,18
+"Bruh, stop cappin’, lowkey annoyed",lowkey,slang,genz-alpha-slangs,1,0,20,26
+"Bruh, stop cappin’, lowkey annoyed",Bruh,slang,genz-alpha-slangs,1,0,0,4
+"Mate, whole squad waitin’",whole squad,slang,genz-alpha-slangs,0,1,6,17
+"Mate, whole squad waitin’",waitin’,slang,genz-alpha-slangs,1,0,18,25
+"Mate, whole squad waitin’",Mate,slang,genz-alpha-slangs,1,0,0,4
+"Dude, big yikes",yikes,slang,genz-alpha-slangs,1,0,10,15
+"Dude, big yikes",Dude,slang,genz-alpha-slangs,1,0,0,4

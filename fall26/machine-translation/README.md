@@ -1,0 +1,1 @@
+This directory tests Machine Translation only. Thresholds except the final specialized or not threshold are already set.

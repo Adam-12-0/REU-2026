@@ -1,0 +1,2 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [42:45<2:08:15, 2565.33s/it]Loading checkpoint shards:  50%|█████     | 2/4 [1:28:57<1:29:33, 2686.80s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [2:14:07<44:57, 2697.34s/it]  Loading checkpoint shards: 100%|██████████| 4/4 [2:16:05<00:00, 1679.08s/it]Loading checkpoint shards: 100%|██████████| 4/4 [2:16:05<00:00, 2041.29s/it]
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset

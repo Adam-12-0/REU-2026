@@ -1,0 +1,12 @@
+Dataset: silent_signals_sample.csv
+Name: silentsig_no_spacy
+SOURCE_LANGUAGE: en
+MT output directory: pipeline_outputs/silentsig_no_spacy/mt_outputs
+Starting MT judge run.
+Dataset: silent_signals_sample.csv
+Language: en
+Output directory: pipeline_outputs/silentsig_no_spacy/mt_outputs
+Loading spaCy NER model: None
+Loading tokenizer: meta-llama/Meta-Llama-3.1-8B-Instruct
+Loading model: meta-llama/Meta-Llama-3.1-8B-Instruct
+Using 4-bit BitsAndBytes quantization.
