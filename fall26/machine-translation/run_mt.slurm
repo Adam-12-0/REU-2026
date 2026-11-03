@@ -4,8 +4,8 @@
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
-#SBATCH --exclude=evc11
 #SBATCH --time=24:00:00
+#SBATCH --exclude=evc11
 #SBATCH --mail-type=ALL
 #SBATCH --output=mt-%j.out
 #SBATCH --error=mt-%j.err
@@ -35,7 +35,8 @@ cd "$SLURM_SUBMIT_DIR"
 : "${OUTDIR:?OUTDIR was not set by driver}"
 : "${SOURCE_LANGUAGE:?SOURCE_LANGUAGE was not set by driver}"
 : "${TRANSLATION_COMBO:?TRANSLATION_COMBO was not set by driver}"
-: "${MODEL:?MODEL was not set by driver}"
+: "${MODEL1:?MODEL1 was not set by driver}"
+: "${MODEL2:?MODEL2 was not set by driver}"
 
 # Convert spanish:arabic:chinese:japanese into a Bash array.
 IFS=':' read -r -a TRANSLATIONS <<< "$TRANSLATION_COMBO"
@@ -70,7 +71,8 @@ echo "Key: $KEY"
 echo "Name: $NAME"
 echo "Source language: $SOURCE_LANGUAGE"
 echo "Translation languages: ${TRANSLATIONS[*]}"
-echo "Model: $MODEL"
+echo "Model1: $MODEL1"
+echo "Model2: $MODEL2"
 echo "Number of vote thresholds: $NUM_THRESHOLDS"
 echo "Output directory: $METHOD_OUTDIR"
 
@@ -83,20 +85,42 @@ python3 -u mt_translate.py \
   --dataset "$DATASET" \
   --input-lang "$SOURCE_LANGUAGE" \
   --output "$TRANSLATION_OUTPUT" \
-  --model "$MODEL" \
+  --model "$MODEL1" \
   --translations "${TRANSLATIONS[@]}" \
   --batch-size 8
 
 # ---------------------------------------------------------------------------
-# 2. Tokenize original sentences and calculate per-language fuzzy scores,
+# 2A. Tokenize original sentences and calculate per-language fuzzy scores,
 #    binary votes, vote totals, and normalized vote scores.
 # ---------------------------------------------------------------------------
-python3 -u mt_score_cands.py \
+#python3 -u mt_score_cands.py \
+#  --translations "$TRANSLATION_OUTPUT" \
+#  --output "$CANDIDATE_SCORES" \
+#  --trans-langs "${TRANSLATIONS[@]}" \
+#  --fuzzy-threshold 93 \
+#  --batch-size 256
+  
+  
+# ---------------------------------------------------------------------------
+# 2B. Tokenize original sentences and calculate per-language
+#    binary votes, vote totals, and normalized vote scores.
+# ---------------------------------------------------------------------------
+#python3 -u mt_score_cands_2.py \
+#  --translations "$TRANSLATION_OUTPUT" \
+#  --output "$CANDIDATE_SCORES" \
+#  --trans-langs "${TRANSLATIONS[@]}" \
+#  --model "$MODEL2" \
+#  --batch-size 4
+  
+# ---------------------------------------------------------------------------
+# 2C. Per sentence, prompt an LLM to identify lost or mistranslated terms.
+# ---------------------------------------------------------------------------
+python3 -u mt_score_cands_3.py \
   --translations "$TRANSLATION_OUTPUT" \
   --output "$CANDIDATE_SCORES" \
   --trans-langs "${TRANSLATIONS[@]}" \
-  --fuzzy-threshold 93 \
-  --batch-size 256
+  --model "$MODEL2" \
+  --batch-size 4
 
 # ---------------------------------------------------------------------------
 # 3. Evaluate normalized vote-score thresholds and select the best threshold.

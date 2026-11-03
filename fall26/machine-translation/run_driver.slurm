@@ -12,29 +12,28 @@ cd "$SLURM_SUBMIT_DIR"
 
 # ---------------------------------------------------------------------------
 # Experiment settings
-#
-# DATASET:
-#   sentence_id, sentence
-#
-# KEY:
-#   sentence_id, sentence, special_term, term_type,
-#   term_start_id, term_end_id
 # ---------------------------------------------------------------------------
 
-DATASET="slangq_input.csv"
-KEY="slangq_key.csv"
-NAME="slangq"
+DATASET="slaying_input.csv"
+KEY="slaying_key.csv"
+NAME="slaying"
 
-MODEL="gemma"
+# MODEL1 performs translation.
+# MODEL2 evaluates candidate preservation.
+MODEL1="llama"
+MODEL2="gemma"
+
 SOURCE_LANGUAGE="en"
 
 # Allowed aliases: spanish, arabic, chinese, japanese
 # Separate multiple aliases with colons.
-TRANSLATION_COMBO="chinese"
+TRANSLATION_COMBO="spanish:arabic:chinese:japanese"
 TRANSLATION_TAG="${TRANSLATION_COMBO//:/-}"
 
-
-OUTDIR="$MODEL/$NAME"
+# Include both models in the output path so different experiments do not
+# overwrite one another.
+MODEL_TAG="${MODEL1}-translate_${MODEL2}-judge"
+OUTDIR="$MODEL_TAG/$NAME/v3"
 LOGDIR="$OUTDIR/logs/$TRANSLATION_TAG"
 
 mkdir -p "$OUTDIR" "$LOGDIR"
@@ -42,20 +41,21 @@ mkdir -p "$OUTDIR" "$LOGDIR"
 EXPORTS="ALL,DATASET=$DATASET,KEY=$KEY,NAME=$NAME"
 EXPORTS="$EXPORTS,OUTDIR=$OUTDIR,SOURCE_LANGUAGE=$SOURCE_LANGUAGE"
 EXPORTS="$EXPORTS,TRANSLATION_COMBO=$TRANSLATION_COMBO"
-EXPORTS="$EXPORTS,MODEL=$MODEL"
+EXPORTS="$EXPORTS,MODEL1=$MODEL1,MODEL2=$MODEL2"
 
 mt_jid=$(sbatch --parsable \
   --export="$EXPORTS" \
-  --job-name="mt_${NAME}_${MODEL}" \
-  --output="$LOGDIR/${NAME}_${MODEL}_mt-%j.out" \
-  --error="$LOGDIR/${NAME}_${MODEL}_mt-%j.err" \
+  --job-name="mt_${NAME}_${MODEL1}_${MODEL2}" \
+  --output="$LOGDIR/${NAME}_${MODEL1}_${MODEL2}_mt-%j.out" \
+  --error="$LOGDIR/${NAME}_${MODEL1}_${MODEL2}_mt-%j.err" \
   run_mt.slurm)
 
 echo "Submitted MT job: $mt_jid"
 echo "Input dataset: $DATASET"
 echo "Key dataset: $KEY"
 echo "Dataset name: $NAME"
-echo "Model: $MODEL"
+echo "Translation model: $MODEL1"
+echo "Judge model: $MODEL2"
 echo "Source language: $SOURCE_LANGUAGE"
 echo "Translations: $TRANSLATION_COMBO"
 echo "Output root: $OUTDIR"
